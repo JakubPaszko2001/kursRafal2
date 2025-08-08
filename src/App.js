@@ -81,21 +81,6 @@ export default function App() {
                     />
                   </svg>
                 </a>
-                <a
-                  href="#wideo"
-                  className="inline-flex justify-center items-center gap-2 rounded-2xl border border-white/15 hover:border-white/25 px-6 py-3 text-base font-semibold"
-                >
-                  Zobacz wideo 2:09
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M8 5v14l11-7-11-7Z"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </a>
               </div>
               <div className="mt-6 flex items-center gap-6 text-xs text-white/70">
                 <div className="flex items-center gap-2">
@@ -269,25 +254,7 @@ export default function App() {
             <p className="mt-3 text-white/70">Gwarancja satysfakcji 14 dni. Dostęp natychmiast po zakupie.</p>
           </div>
 
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            {/* Starter */}
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 flex flex-col">
-              <h3 className="text-xl font-bold">Starter</h3>
-              <p className="mt-1 text-white/70">Dla par, które chcą zacząć od podstaw</p>
-              <div className="mt-4 text-4xl font-extrabold">299 zł</div>
-              <ul className="mt-4 space-y-2 text-sm text-white/80">
-                <li>• 6 modułów wideo</li>
-                <li>• PDF: checklisty i karty rozmów</li>
-                <li>• Dostęp na zawsze</li>
-              </ul>
-              <button
-                className="mt-6 rounded-2xl bg-white text-[#0f1222] font-bold py-3 hover:opacity-90 active:opacity-80"
-                onClick={() => handleBuy("Starter")}
-              >
-                Kup Starter
-              </button>
-            </div>
-
+          <div className="mt-10 flex justify-center">
             {/* Premium */}
             <div className="relative rounded-3xl border-2 border-rose-400 bg-white/5 p-6 flex flex-col shadow-[0_0_60px_-12px_rgba(244,63,94,.4)]">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rose-400 text-[#0f1222] text-xs font-extrabold px-3 py-1 rounded-full">
@@ -307,24 +274,6 @@ export default function App() {
                 onClick={() => handleBuy("Premium")}
               >
                 Kup Premium
-              </button>
-            </div>
-
-            {/* VIP */}
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 flex flex-col">
-              <h3 className="text-xl font-bold">VIP</h3>
-              <p className="mt-1 text-white/70">Dla par, które chcą indywidualnego wsparcia</p>
-              <div className="mt-4 text-4xl font-extrabold">1290 zł</div>
-              <ul className="mt-4 space-y-2 text-sm text-white/80">
-                <li>• Wszystko z Premium</li>
-                <li>• 2 konsultacje 1:1 (online)</li>
-                <li>• Plan wdrożenia „szyty na miarę”</li>
-              </ul>
-              <button
-                className="mt-6 rounded-2xl bg-white text-[#0f1222] font-bold py-3 hover:opacity-90 active:opacity-80"
-                onClick={() => handleBuy("VIP")}
-              >
-                Kup VIP
               </button>
             </div>
           </div>
